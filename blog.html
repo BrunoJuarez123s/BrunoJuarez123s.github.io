@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo_blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="BLOG.JS"></script>
+    <title>Blog</title>
+</head>
+
+<body>
+
+    <div class="chido">
+        <div class="logo">
+            <img src="data:image/png;base64,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"
+                alt="" width="100px" height="60px">
+        </div>
+
+
+        <div class="eslogan">
+            <p align="center">!Disfruta del mejor rendimiento con nuestras tarjetas graficas</p>
+
+        </div>
+
+
+
+        <nav>
+            <div class="menu1">
+                <ul>
+                    <li><a href="https://www.nvidia.com/es-es/geforce/buy/"><Strong>Comprar</Strong></a></li>
+                    <li><a href="index.html"><strong>Inicio</strong></a></li>
+                    <li><a href="noticias.html"><strong>Noticias</strong></a></li>
+                    <li><a href="Nosotros.html"><strong>Nosotros</strong></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+    
+
+
+
+        <div class="main-head">
+
+            <hr>
+            <h1>
+                <p> Disfruta del Blog de Nvidia</p>
+            </h1>
+
+        </div>
+
+
+        <div class="select_in">
+            <label for="pet-select">Elije un tema para recomendarte contenido :</label>
+
+            <select onchange="mensstem()" name="pets" id="pet-select">
+                <option value="">--Elige una opcion--</option>
+                <option value="NVIDIA_1" onclick="mensstem()">Hardware</option>
+                <option value="NVIDIA_2" onclick="mensstem()">Software</option>
+                <option value="NVIDIA_3" onclick="mensstem()">Edicion</option>
+                <option value="NVIDIA_4" onclick="mensstem()">IA</option>
+                <option value="NVIDIA_5" onclick="mensstem()">Gaming</option>
+            </select>
+
+
+        </div>
+
+
+
+
+
+        <div class="email_in">
+
+            <form action="">
+                <label for="email">Para enterarte de proximas publicaciones ingresa tu correo:</label>
+                <br>
+                <input type="email" id="email" size="30" required />
+                <button type="submit" class="boton_sub" onclick="menssem()">Enviar</button>
+
+            </form>
+
+
+
+        </div>
+
+
+        <div class="image_1">
+
+            <img src="NVIDIA-IA-ya-esta-disponible-en- (1).jpg" alt="imagen_blog1">
+
+            <div class="descrip_img1">
+                <p style="font-size: 12pt;"> <b><em>19 de Octubre, 2023</em></b></p>
+                <hr>
+                <a href="https://blogs.nvidia.com/blog/2023/10/19/nvidia-ai-now-available-in-oracle-cloud-marketplace/">
+                    <h3>La IA en la nube de NVIDIA ya está disponible en Oracle Cloud Marketplace</h3>
+                </a>
+                <i class="fa-solid fa-right-long" style="color: #000000;"></i>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="image_2">
+
+            <img src="202310129492338_1.jpg.webp" alt="imagen_blog2">
+
+            <div class="descrip_img2">
+                <b>
+                    <p style="font-size: 12pt;"><em>12 de Octubre, 2023</em></p>
+                </b>
+                <hr>
+                <a href="https://blogs.nvidia.com/blog/2023/10/12/geforce-now-thursday-oct-12/">
+                    <h3>Forza Motorsport llega a GeForce NOW</h3>
+                </a>
+
+                <i class="fa-solid fa-right-long" style="color: #000000;"></i>
+
+            </div>
+
+
+
+        </div>
+
+        <footer class="footer">
+          
+               <div class="container">
+           
+                   <div class="footer-row">
+           
+                       <div class="footer-links">
+                           
+                           
+           
+                           <ul>
+                               <p>Productos</p>
+                               <li><a href="">Tarjetas graficas</a></li>
+                               <li><a href="">Laptops</a></li>
+                               <li><a href="">G-Sync Monitores</a></li>
+                               <li><a href="">GeForce Now</a></li>
+                           </ul>
+           
+                       </div>
+           
+                       <div class="footer-links">
+                           <ul>
+                               <p>Comunidad y Noticias</p>
+                               <li><a href="">Ultimas noticias</a></li>
+                               <li><a href="">Foro Comunidad</a></li>
+                               <li><a href="">Portal Comunidad</a></li>
+                               <li><a href="">Recursos Desarollador</a></li>
+                           </ul>
+                       </div>
+           
+                       <div class="footer-links">
+                           <ul>
+                               <p>Soporte</p>
+                               <li><a href="">Drivers</a></li>
+                               <li><a href="">Soporte de Compra</a></li>
+                               <li><a href="">Apoyo tecnico</a></li>
+                               <li><a href="">GeForce Now</a></li>
+                           </ul>
+           
+                       </div>
+           
+                       <div class="footer-links">
+                           <ul>
+                               <p>Siguenos</p>
+           
+                               <div class="social-link">
+                                   <a href=""><i class="fab fa-facebook-f"></i></a>
+                                   <a href=""><i class="fab fa-instagram"></i></a>
+                                   <a href=""><i class="fab fa-twitter"></i></a>
+                                   <a href=""><i class="fab fa-youtube"></i></a>
+                               </div>
+                               
+                           </ul>
+           
+                       </div>
+           
+                   </div>
+           
+               </div>
+               
+           </footer>
+
+
+</body>
+
+</html>

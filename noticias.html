@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="noticias.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="noticias.js"></script>
+</head>
+<body>
+
+    <div class="chido">
+        <div class="logo">
+            <img src="data:image/png;base64,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" alt="" width="100px" height="60px">
+        </div>
+    
+    
+        <div class="eslogan">
+            <p align="center">!Disfruta del mejor rendimiento con nuestras tarjetas graficas</p>
+    
+        </div>
+    
+    
+    
+        <nav>
+            <div class="menu1">
+                <ul>
+                    <li><a href="https://www.nvidia.com/es-es/geforce/buy/"><Strong>Comprar</Strong></a></li>
+                    <li><a href="index.html"><strong>Inicio</strong></a></li>
+                    <li><a href="blog.html"><strong>Blog</strong></a></li>
+                    <li><a href="Nosotros.html"><strong>Nosotros</strong></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2 class="titulo">Ultimas noticias</h2>
+
+        <div class="not">
+         
+            <iframe  width="600" height="400" src="https://www.youtube.com/embed/DbuKZgZpDP8?si=R2fo-t6GhWqR-V0x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Cyberpunk 2077: Phantom Liberty ya disponible con NVIDIA DLSS 3.5 y <br>Ray Tracing Completo</p>
+        </div>
+        
+
+        <div class="not2">
+            <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/news/dlss-3-naraka-bladepoint-slender-vermintide-2/dlss-3-naraka-bladepoint-slender-the-arrival-warhammer-vermintide-2-newsfeed.jpg" alt="" width="600" height="400">
+            <p>DLSS 3 acelera el rendimiento en NARAKA: BLADEPOINT, Slender: The Arrival y Warhammer: Vermintide 2</p>
+        </div>
+        <br>
+<hr>
+        <div class="notUT">
+
+            <h2>Ultimas noticias</h2>
+
+            <p>24 de octubre de 2023
+                Alan Wake 2 se lanza el 27 de octubre con ray tracing completo y DLSS 3.5: obtén la mejor experiencia con las tarjetas gráficas GeForce RTX Serie 40
+                Featured StoriesGeForce RTX GPUsNVIDIA DLSSNVIDIA RTXRay ReconstructionRay Tracing
+                Además, DLSS 2 ya está disponible en Ikonei Island: An Earthlock Adventure y Shadows of Doubt.
+                <a href="">Leer Más</a> </p>
+
+        </div>
+
+
+        <div class="notUI">
+            
+            <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/news/alan-wake-2-dlss-3-5-full-ray-tracing-out-this-week/alan-wake-2-full-ray-tracing-dlss-3-5-newsfeed.jpg" alt="" width="400">
+        
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+
+      
+            
+            
+            
+        <div class="new1">
+            <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/news/reflex-counter-strike-2-overwatch-season-7/October-2023-gf-article-newfeed-625x330.jpg" alt="" width="350">
+            <p>NVIDIA Reflex reduce la latencia en <br>Counter-Strike 2, Overwatch 2 Season 7 y  <br>Warhammer: Vermintide 2 <br> <a href="">Leer mas</a></p>
+        </div>
+
+        <div class="new2">
+            <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/news/nvidia-geforce-game-ready-drivers-newsfeed-latest.jpg" alt="" width="350">
+            <p>Lanzamiento del nuevo Driver Game Ready: DLSS 3 para NARAKA: BLADEPOINT y Warhammer: Vermintide 2, además de mejoras en la súper resolución de video RTX y la difusión estable ahora es hasta 2 veces más rápida <br> <a href="">Leer mas</a></p>
+
+        </div>
+        <hr>
+        <div class="new3">
+            <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/news/counter-strike-2-released-featuring-nvidia-reflex/Counter-Strike-gf-article-newfeed-625x330.jpg" alt="" width="350">
+            <p>Counter-Strike 2 con NVIDIA Reflex y tarjetas gráficas GeForce RTX Serie 40: La latencia del sistema más baja y los FPS más altos <br> <a href="">Leer mas</a></p>
+        </div>
+        
+
+        <div class="form">
+
+            <form id="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+        
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+        
+                <button type="button" onclick="enviarFormulario()">Enviar</button>
+            </form>
+        
+
+        </div>
+
+        <div class="formtxt">
+
+            <h2>Quieres recibir noticias</h2>
+            <p>Si quieres recibir una notificaion para saber mas rapido las ultimas noticias sobre envida nuestros productos y las mejoras de ellos, envia tus datos e recibiras una notifiacaion.</p>
+
+        </div>
+        
+        <div class="grupo_correos">
+            <div class="area_co">
+                <h2>Quedate con Nvidia</h2>
+                <p>Ingresa tu correo y te enviaremos las ultimas noticias sobre productos y <br> tecnologias de Nvidia al igual 
+                    que avisos sobre precios y descuentos en <br>nuestros productos que no te puedes perder  </p>
+                    <form action="">
+                        <label for="email">Para enterarte de proximas publicaciones ingresa tu correo:</label>
+                        <br>
+                        <input type="email" id="email" size="30" required />
+                        <button type="submit" class="boton_sub" onclick="menssem()">Enviar</button>
+        
+                    </form>
+         </div>
+    
+
+         <footer class="footer">
+            <hr>
+               <div class="container">
+           
+                   <div class="footer-row">
+           
+                       <div class="footer-links">
+                           
+                           
+           
+                           <ul>
+                               <p>Productos</p>
+                               <li><a href="">Tarjetas graficas</a></li>
+                               <li><a href="">Laptops</a></li>
+                               <li><a href="">G-Sync Monitores</a></li>
+                               <li><a href="">GeForce Now</a></li>
+                           </ul>
+           
+                       </div>
+           
+                       <div class="footer-links">
+                           <ul>
+                               <p>Comunidad y Noticias</p>
+                               <li><a href="">Ultimas noticias</a></li>
+                               <li><a href="">Foro Comunidad</a></li>
+                               <li><a href="">Portal Comunidad</a></li>
+                               <li><a href="">Recursos Desarollador</a></li>
+                           </ul>
+                       </div>
+           
+                       <div class="footer-links">
+                           <ul>
+                               <p>Soporte</p>
+                               <li><a href="">Drivers</a></li>
+                               <li><a href="">Soporte de Compra</a></li>
+                               <li><a href="">Apoyo tecnico</a></li>
+                               <li><a href="">GeForce Now</a></li>
+                           </ul>
+           
+                       </div>
+           
+                       <div class="footer-links">
+                           <ul>
+                               <p>Siguenos</p>
+           
+                               <div class="social-link">
+                                   <a href=""><i class="fab fa-facebook-f"></i></a>
+                                   <a href=""><i class="fab fa-instagram"></i></a>
+                                   <a href=""><i class="fab fa-twitter"></i></a>
+                                   <a href=""><i class="fab fa-youtube"></i></a>
+                               </div>
+                               
+                           </ul>
+           
+                       </div>
+           
+                   </div>
+           
+               </div>
+                <hr>
+           </footer>
+      
+    
+
+    </div>
+    
+</body>
+</html>

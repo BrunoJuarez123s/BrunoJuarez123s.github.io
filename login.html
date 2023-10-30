@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logim</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "" || password === "") {
+                alert("Los campos están vacíos. Por favor, complete todos los campos.");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="" class="form" onsubmit="return validateForm()">
+            <h1 class="title">Inicio</h1>
+            <div class="inp">
+                <input type="text" name="username" id="username" class="input" placeholder="Usuario">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="inp">
+                <input type="password" name="password" id="password" class="input" placeholder="Contraseña">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <button type="submit" class="submit"><a href="index.html">Iniciar sesión</a></button>
+            
+        </form>
+        <div></div>
+        <div class="banner">
+            <h1 class="wel_text">BIENVENIDO<br></h1>
+            <p class="para">Gracias por ingresar a<br> nuestra página web</p>
+        </div>
+    </div>
+</body>
+
+</html>
